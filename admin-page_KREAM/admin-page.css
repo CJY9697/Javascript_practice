@@ -1,0 +1,95 @@
+/* form 레이아웃 설정 */
+.form-inline-layout {
+    display: flex; /* Flexbox 활성화 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 10px; /* 요소 간 간격 */
+}
+
+/* 각 요소 너비 조정 */
+.form-inline-layout .form-select {
+    width: 150px; /* 카테고리 너비 */
+}
+
+.form-inline-layout .form-control {
+    width: 200px; /* 입력창 너비 */
+}
+
+.form-inline-layout .btn {
+    white-space: nowrap; /* 버튼 텍스트 줄바꿈 방지 */
+}
+
+/* 페이지 네이션 설정 */
+.pagination-container {
+    display: flex;
+    justify-content: center; /* 기본 중앙 정렬 */
+}
+
+.pagination {
+    margin-left: -150px; /* 중앙보다 조금 왼쪽으로 이동 */
+}
+
+.pagination .page-link {
+    color: white !important;
+    background-color: #343a40 !important;
+    border-color: #343a40 !important;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #6c757d !important;
+    color: white !important;
+    border-color: #6c757d !important;
+}
+
+/* 현재 시간 글자 크기 설정 */
+#currentDateTime {
+    font-size: 14px;
+}
+
+/* 야간모드에서 테이블 스타일 추가 */
+[data-theme="dark"] table.table {
+    background-color: #6f6e6e; /* 표 배경 어둡게 설정 */
+}
+
+[data-theme="dark"] table.table th,
+[data-theme="dark"] table.table td {
+    border-color: #505458; /* 테두리 색상 어둡게 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+}
+
+[data-theme="dark"] table.table th {
+    background-color: #666666; /* 헤더 배경 어둡게 설정 */
+}
+
+[data-theme="dark"] table.table td {
+    background-color: #787878; /* 셀 배경 어둡게 설정 */
+}
+/* 다크모드 버튼 스타일 */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* 성별 셀렉터 스타일 */
+#genderSelector {
+width: auto; /* 너비 자동 조정 */
+}
+
+#genderSelector + label {
+margin-bottom: 5px; /* 라벨과 셀렉터 간격 조정 */
+}
